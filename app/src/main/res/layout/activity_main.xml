@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBF9FF"
+    tools:context=".ui.MainActivity">
+
+    <fragment
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.dynamicfeatures.fragment.DynamicNavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="75dp"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/home_navigation" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/ic_baseline_settings_24"
+        app:backgroundTint="@color/white"
+        app:elevation="6dp"
+        app:fabCustomSize="72dp"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:contentDescription="@string/app_name" />
+
+    <com.makhalibagas.core.view.CurvedBottomNavigation
+        android:id="@+id/curvedBottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:elevation="20dp"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/menu_main" />
+
+</FrameLayout>

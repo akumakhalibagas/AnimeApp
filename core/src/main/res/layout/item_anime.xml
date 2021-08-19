@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.rishabhharit.roundedimageview.RoundedImageView
+        android:id="@+id/animeImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/large"
+        app:cornerRadius="10dp" />
+
+    <TextView
+        android:id="@+id/animeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/robotobold"
+        tools:text="Cowboy Bebop"
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/animeAge"
+        app:layout_constraintEnd_toEndOf="@id/animeImage"
+        app:layout_constraintStart_toStartOf="@id/animeImage" />
+
+    <TextView
+        android:id="@+id/animeAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/nunitoreguler"
+        tools:text="17+ (violence &amp; profanity)"
+        android:textColor="#F4F1F1"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/animeImage"
+        app:layout_constraintStart_toStartOf="@id/animeImage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

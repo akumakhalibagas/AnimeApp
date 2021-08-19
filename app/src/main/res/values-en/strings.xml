@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AnimeAja</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="setting_language">Setting Language</string>
+    <string name="share">Share</string>
+    <string name="rate">Rate</string>
+    <string name="author">Bagas Makhali</string>
+    <string name="dummydesc">In the year 2071, humanity has colonized several of the planets. In the year 2071, humanity has colonized several of the planets. In the year 2071, humanity has colonized several of the planets. In the year 2071, humanity has colonized several of the planets. In the year 2071, humanity has colonized several of the....</string>
+    <string name="synopsis">Synopsis</string>
+    <string name="baca_selanjutnya">Read More</string>
+    <string name="manga">Manga</string>
+    <string name="settings">Settings</string>
+</resources>

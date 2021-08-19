@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#85F2E8FF"
+    tools:context=".ui.DetailActivity">
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+        android:contentDescription="@string/app_name" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="25dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="50dp" />
+
+    <com.rishabhharit.roundedimageview.RoundedImageView
+        android:id="@+id/detailTrailer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="55dp"
+        android:layout_marginTop="50dp"
+        android:elevation="50dp"
+        android:scaleType="fitXY"
+        android:src="@android:color/darker_gray"
+        app:cornerRadius="10dp"
+        app:layout_constraintHeight_percent="0.45"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_play_arrow_24"
+        app:elevation="50dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@id/detailTrailer"
+        app:layout_constraintTop_toTopOf="@id/detailTrailer"
+        app:layout_constraintEnd_toEndOf="@id/detailTrailer"
+        app:layout_constraintBottom_toBottomOf="@id/detailTrailer"
+        app:tint="@color/white"
+        android:id="@+id/playTrailer"/>
+
+    <com.rishabhharit.roundedimageview.RoundedImageView
+        android:id="@+id/detailImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:elevation="50dp"
+        android:scaleType="fitXY"
+        android:src="@android:color/darker_gray"
+        app:cornerRadius="5dp"
+        app:layout_constraintStart_toStartOf="@id/detailTrailer"
+        app:layout_constraintTop_toBottomOf="@id/detailTrailer" />
+
+    <TextView
+        android:id="@+id/detailTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:elevation="50dp"
+        android:fontFamily="@font/robotobold"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toStartOf="@id/ib_bookmark"
+        app:layout_constraintStart_toEndOf="@id/detailImage"
+        app:layout_constraintTop_toTopOf="@id/detailImage"
+        tools:text="Cowboy Bebop" />
+
+    <TextView
+        android:id="@+id/detailStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:elevation="50dp"
+        android:fontFamily="@font/nunitoreguler"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/detailImage"
+        app:layout_constraintTop_toBottomOf="@id/detailTitle"
+        tools:text="Finished" />
+
+    <ImageButton
+        android:id="@+id/ib_bookmark"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_baseline_bookmark_border_24"
+        android:elevation="50dp"
+        app:layout_constraintEnd_toEndOf="@id/detailTrailer"
+        app:layout_constraintTop_toBottomOf="@id/detailTrailer"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck"
+        android:contentDescription="TODO" />
+
+    <ImageButton
+        android:id="@+id/ib_bookmarked"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_baseline_bookmark_24"
+        android:elevation="50dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/detailTrailer"
+        app:layout_constraintTop_toBottomOf="@id/detailTrailer"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck"
+        android:contentDescription="@string/app_name"/>
+
+    <TextView
+        android:id="@+id/detailSynopsis"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="10dp"
+        android:elevation="50dp"
+        android:fontFamily="@font/nunitoreguler"
+        android:maxLines="7"
+        android:text="@string/dummydesc"
+        android:textAlignment="viewStart"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/card"
+        app:layout_constraintStart_toStartOf="@id/card"
+        app:layout_constraintTop_toBottomOf="@id/tvSynopsis" />
+
+    <TextView
+        android:id="@+id/tvSynopsis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:elevation="50dp"
+        android:text="@string/synopsis"
+        android:textColor="@color/purple_500"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/card"
+        app:layout_constraintTop_toBottomOf="@id/detailImage" />
+
+    <TextView
+        android:id="@+id/detailReadMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="3dp"
+        android:elevation="50dp"
+        android:text="@string/baca_selanjutnya"
+        android:textColor="@color/purple_500"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/card"
+        app:layout_constraintTop_toBottomOf="@id/detailSynopsis" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

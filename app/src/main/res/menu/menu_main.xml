@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/nav_home"
+        android:title="Anime"
+        android:icon="@drawable/ic_baseline_whatshot_24"/>
+
+    <item android:id="@+id/nav_empity"
+        android:title="" />
+
+    <item android:id="@+id/nav_bookmark"
+        android:title="Bookmark"
+        android:icon="@drawable/ic_baseline_menu_book_24"/>
+
+</menu>

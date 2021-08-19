@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.makhalibagas.animeaja.ui.AnimeFragment"
+        android:label="fragment_anime"
+        tools:layout="@layout/fragment_anime" />
+
+    <fragment
+        android:id="@+id/nav_bookmark"
+        android:name="com.makhalibagas.favorite.BookmarkFragment"
+        android:label="fragment_bookmark" />
+
+</navigation>

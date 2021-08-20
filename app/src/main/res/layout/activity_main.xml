@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FBF9FF"
+    android:background="@color/colorFBF9FF"
     tools:context=".ui.MainActivity">
 
     <fragment
@@ -22,12 +22,12 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|center_horizontal"
         android:layout_marginBottom="20dp"
-        android:src="@drawable/ic_baseline_settings_24"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_settings"
         app:backgroundTint="@color/white"
         app:elevation="6dp"
         app:fabCustomSize="72dp"
-        tools:ignore="SpeakableTextPresentCheck"
-        android:contentDescription="@string/app_name" />
+        tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck" />
 
     <com.makhalibagas.core.view.CurvedBottomNavigation
         android:id="@+id/curvedBottomNavigation"

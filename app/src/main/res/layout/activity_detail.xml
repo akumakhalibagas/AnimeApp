@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#85F2E8FF"
+    android:background="@color/color85F2E8FF"
     tools:context=".ui.DetailActivity">
 
     <ImageButton
@@ -46,6 +46,7 @@
         android:layout_height="wrap_content"
         android:src="@drawable/ic_baseline_play_arrow_24"
         app:elevation="50dp"
+        android:contentDescription="@string/app_name"
         android:visibility="gone"
         app:layout_constraintStart_toStartOf="@id/detailTrailer"
         app:layout_constraintTop_toTopOf="@id/detailTrailer"
@@ -103,7 +104,7 @@
         app:layout_constraintEnd_toEndOf="@id/detailTrailer"
         app:layout_constraintTop_toBottomOf="@id/detailTrailer"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck"
-        android:contentDescription="TODO" />
+        android:contentDescription="@string/app_name" />
 
     <ImageButton
         android:id="@+id/ib_bookmarked"
